@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header id="leftNav">
+        <h1>PROMODORO</h1>
+        <h3>Session Length - <span id="sessionLength"></span> Minutes</h3>
+        <div id="sessionControl">
+            <button class="btn btn-default btn1">+</button>
+            <button class="btn btn-default btn1">-</button>
+        </div>
+        <h3>Break Length - <span id="breakLength"></span> Minutes</h3>
+        <div id="breakControl">
+            <button class="btn btn-default btn1">+</button>
+            <button class="btn btn-default btn1">-</button>
+        </div>
+        <h3>Long Break Length - <span id="longBreakLength"></span> Minutes</h3>
+        <div id="longBreakControl">
+            <button class="btn btn-default btn1">+</button>
+            <button class="btn btn-default btn1">-</button>
+        </div>
+        <div id="promodoroCycle">
+            <h3>Promodoro Cycle</h3>
+            <div id="location-control"></div>
+
+        </div>
+
+    </header>
+    <main>
+        <div id="toCenter">
+          <div id="circle-clock" >
+            <div id="innerClock">
+                <p><span id="clockMin"></span>:<span id=clockSec></span></p>
+                <small>Click to start</small>
+            </div>
+        </div>
+        <small id="reset" class="center-block">Reset</small>
+</div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
